@@ -39,7 +39,7 @@ def tutorial_list(request):
 
 
 # find tutorial by pk (id):
-@api_view(['GET','POST','DELETE'])
+@api_view(['GET','PUT','DELETE'])
 def tutorial_detail(request,pk):
     try:
         tutorial = Tutorial.objects.get(pk=pk)
